@@ -2,53 +2,142 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>TP3</title>
+<title>&quot; Trabajo Práctico Nº 3 - Index &quot;</title>
 </head>
 
 <body>
-<header>Trabajo Practico 3, Programacion Visual</header>
-<h1>Alumno: Sosa Facundo Gabriel</h1>
-
+<header>
 	<nav> 
-		<a href="#">PRINCIPAL</a>
-		<a href="#">ADICIONAL</a>
-		<a href="#">PIE DE PAGINA</a>
+		<a href="#seccion1">Sección 1</a>
+		<a href="#seccion2">Sección 2</a>
+		<a href="#seccion3">Sección 3</a>
 	</nav>
+</header>
+<!-- La propiedad center esta obsoleta en html5, pero le doy uso en este html a falta de css -->
+<center><h1> &quot; Programación Visual 2024 &quot;</h1></center>
+<center><h2> &lt; Trabajo Práctico Nº 3 &gt;</h2></center><hr>
+
 	
-	 <main>
+<!-- Información sobre las clases en Java -->	
+	<main>
         <section id="seccion1">
-            <h2>Sección 1</h2>
-            <p>Metodos Accesores</p>
+            <h2>Modificadores de Acceso</h2>
+            <h3>&quot;Public&quot; &quot;Private&quot; &quot;Protected&quot; &quot;Default&quot;</h3>
+            <p>Los modificadores de acceso o métodos accesores son palabras clave que se utilizan 
+	            para controlar la visibilidad de clases, métodos y atributos en un programa. <br> 
+	            Estos modificadores determinan desde qué partes del programa se puede acceder a una clase, 
+	            método o atributo.</p>
             <ol>
                 <li>Public</li>
                 <li>Private</li>
                 <li>Protected</li>
                 <li>Default-package</li>
             </ol>
+            
+            <table>
+            	<tr>
+            		<th> Método </th>
+            		<th> Descripción </th>
+            	</tr>
+            	<tr>
+            		<td>public</td>
+            		<td>Es accesible desde cualquier otro paquete. 
+            			Esto significa que otras clases fuera del paquete en el que se encuentra la clase 
+            			pueden acceder a ella. 
+            		</td>
+            	</tr>
+            	<tr>
+            		<td>private</td>
+            		<td>Solo es accesible dentro de la propia clase. 
+            		No puede ser accesible desde ninguna otra clase, incluso si está en el mismo paquete</td>
+            	</tr>
+            	<tr>
+            		<td>protected</td>
+            		<td>Permite que la clase sea accesible desde otras clases del mismo paquete y 
+            			también desde clases que hereden de ella, 
+            			incluso si están en paquetes diferentes</td>
+            	</tr>
+            	<tr>
+            		<td>default</td>
+            		<td>Si no se especifica ningún modificador de acceso, la clase se considera tener un modificador de acceso "default" o "package-private". 
+            		Esto significa que la clase es accesible solo dentro del mismo paquete en el que se encuentra</td>
+            	</tr>
+            </table>
         </section>
 
         <section id="seccion2">
-            <h2>Sección 2</h2>
+            <h2>Clases</h2>
+            <h3>&lt; Standar, Abstractas e Interfaces &gt;</h3>
+            <p> En Java, existen varios tipos de clases que pueden utilizarse para diferentes propósitos. <br>
+            	Algunos de los tipos de clases más comunes son:</p>
+            <ol>
+                <li>Standar</li>
+                <li>Abstracta</li>
+                <li>Interfaces</li>
+            </ol>
+            
             <table>
-                <tr>
-                    <th>Objeto </th>
-                    <th>Inicializacion</th>
-                </tr>
-                <tr>
-                    <td>Persona </td>
-                    <td> = new Persona();</td>
-                </tr>
+            	<tr>
+            		<th> Tipo </th>
+            		<th> Descripción </th>
+            	</tr>
+            	<tr>
+            		<td>Standar</td>
+            		<td>Son las clases que se utilizan para definir objetos y comportamientos en un programa. 
+            			Pueden contener atributos, métodos y constructores para crear objetos y realizar operaciones. 
+            		</td>
+            	</tr>
+            	<tr>
+            		<td>Abstractas</td>
+            		<td>Son clases que no pueden ser instanciadas directamente y pueden contener métodos abstractos, es decir, métodos sin implementación. 
+            		Se utilizan como plantillas para definir comportamientos que deben ser implementados por clases hijas.</td>
+            	</tr>
+            	<tr>
+            		<td>Interfaces</td>
+            		<td>Son similares a las clases abstractas, pero solo pueden contener métodos abstractos y constantes. 
+            		Se utilizan para definir contratos que las clases deben cumplir implementando los métodos definidos en la interfaz.</td>
+            	</tr>
             </table>
         </section>
 
         <section id="seccion3">
-            <h2>Sección 3</h2>
-            <p>Los objetos en JAVA son referenciados y no "apuntados" con punteros</p>
+            <h2>Clases por dentro</h2>
+            <h3> Constructores, atributos y métodos</h3>
+            <p> Los constructores, atributos y métodos son elementos fundamentales dentro de las clases en Java, utilizados para definir el comportamiento y la funcionalidad de los objetos creados a partir de esas clases.</p>
+            <ol>
+                <li>Constructores</li>
+                <li>Atributos</li>
+                <li>Métodos</li>
+            </ol>
+            
+            <table>
+            	<tr>
+            		<th> Elemento </th>
+            		<th> Descripción </th>
+            	</tr>
+            	<tr>
+            		<td>Constructores</td>
+            		<td>Un constructor es un método especial que se llama automáticamente cuando se crea un objeto de una clase. 
+            			Su principal función es inicializar el estado inicial del objeto, es decir, 
+            			asignar valores iniciales a los atributos de la clase
+            		</td>
+            	</tr>
+            	<tr>
+            		<td>Atributos</td>
+            		<td>Los atributos representan las características o propiedades de un objeto.
+						Se definen dentro de la clase y especifican el tipo de datos y el nombre del atributo.</td>
+            	</tr>
+            	<tr>
+            		<td>Métodos</td>
+            		<td>Los métodos son bloques de código que realizan tareas específicas o ejecutan acciones dentro de una clase. 
+            		Pueden aceptar parámetros y devolver valores, o simplemente realizar una tarea sin devolver ningún valor.</td>
+            	</tr>
+            </table>
         </section>
-    </main>
+	</main>
 
     <aside>
-        <h2>Contenido Adicional</h2>
+        <h2>Información Adicional</h2>
         <a href="https://www.w3schools.com/html/default.asp" target="">Tutorial HTML</a>
         <img style="width:50px" src="https://play-lh.googleusercontent.com/YdLvdC_Ddh3LugS9AgV-d2a4st1nbtFEziBIPF6ce5szXnNE_GXc9SLazZsZQ4xNk9Q" alt="W3S logo">
     </aside>
