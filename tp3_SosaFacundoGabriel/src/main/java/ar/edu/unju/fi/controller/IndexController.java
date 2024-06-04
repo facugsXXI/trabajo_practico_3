@@ -11,4 +11,9 @@ public class IndexController {
 	public String getIndexPage() {
 		return"index";
 	}
+	
+	@GetMapping("/formulario")
+	public String getFormulario() {
+		return "form-cliente";
+	}
 }
