@@ -1,6 +1,56 @@
 @charset "ISO-8859-1";
 /* index.html */
+.seccion-1{
+	background-color: #8080c0;
+	color: #ffffff;
+	margin-bottom: 25px;
+	padding: 10px 0;
+	text-align: justify;
+	font-family: Courier, monospace;
+}
 
+.seccion-1 ol{
+	border: 1px solid black;
+	display: inline-block;
+}
+.seccion-1 li{
+	border: 1px solid black;
+	
+}
+
+.seccion-2{
+	background-color: #80ffff;
+	color: #400000;
+	margin-bottom: 25px;
+	padding: 10px 0;
+	text-align: justify;
+	font-family: Courier, monospace;
+}
+.seccion-2 ol{
+	border: 2px solid white;
+	display: inline-block;
+}
+.seccion-2 li{
+	padding: 10px 0;
+	
+}
+
+.seccion-3{
+	background-color: #0000ff;
+	color: #c0c0c0;
+	margin-bottom: 25px;
+	padding: 10px 0;
+	text-align: justify;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.seccion-3 ol{
+	border: 2px solid #ffff00;
+	display: inline-block;
+}
+.seccion-3 li{
+	padding: 5px 0;
+	
+}
 /*form-cliente*/
 #encabezado {
 	background-color: #0080c0;
@@ -21,6 +71,7 @@
 	color: #8000ff;
     text-decoration: none;
     margin: 0 10px;
+    text-decoration: underline;
 }
 
 /* Cuerpo */

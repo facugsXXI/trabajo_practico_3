@@ -6,22 +6,23 @@
 <link rel="stylesheet" type="text/css" th:href="@{css/estilos.css}">
 </head>
 
-<body>
-<header>
-	<nav> 
+<body> 
+<header id="encabezado">
+	<!-- La propiedad center esta obsoleta en html5, pero le doy uso en este html a falta de css -->
+	<center><h1> &quot; Programación Visual 2024 &quot;</h1></center>
+	<nav class="navigation"> 
 		<a href="#seccion1">Sección 1</a>
 		<a href="#seccion2">Sección 2</a>
 		<a href="#seccion3">Sección 3</a>
 	</nav>
 </header>
-<!-- La propiedad center esta obsoleta en html5, pero le doy uso en este html a falta de css -->
-<center><h1> &quot; Programación Visual 2024 &quot;</h1></center>
+
 <center><h2> &lt; Trabajo Práctico Nº 3 &gt;</h2></center><hr>
 
 	
 <!-- Información sobre las clases en Java -->	
 	<main>
-        <section id="seccion1">
+        <section id="seccion1" class="seccion-1">
             <h2>Modificadores de Acceso</h2>
             <h3>&quot;Public&quot; &quot;Private&quot; &quot;Protected&quot; &quot;Default&quot;</h3>
             <p>Los modificadores de acceso o métodos accesores son palabras clave que se utilizan 
@@ -66,7 +67,7 @@
             </table>
         </section>
 
-        <section id="seccion2">
+        <section id="seccion2" class="seccion-2">
             <h2>Clases</h2>
             <h3>&lt; Standar, Abstractas e Interfaces &gt;</h3>
             <p> En Java, existen varios tipos de clases que pueden utilizarse para diferentes propósitos. <br>
@@ -101,7 +102,7 @@
             </table>
         </section>
 
-        <section id="seccion3">
+        <section id="seccion3" class="seccion-3">
             <h2>Clases por dentro</h2>
             <h3> Constructores, atributos y métodos</h3>
             <p> Los constructores, atributos y métodos son elementos fundamentales dentro de las clases en Java, utilizados para definir el comportamiento y la funcionalidad de los objetos creados a partir de esas clases.</p>
@@ -137,18 +138,18 @@
         </section>
 	</main>
 
-    <aside>
+    <aside class="additional-content">
         <h2>Información Adicional</h2>
         <a href="https://www.w3schools.com/html/default.asp" target="">Tutorial HTML</a>
         <img style="width:50px" src="https://play-lh.googleusercontent.com/YdLvdC_Ddh3LugS9AgV-d2a4st1nbtFEziBIPF6ce5szXnNE_GXc9SLazZsZQ4xNk9Q" alt="W3S logo">
     </aside>
 
-    <footer>
+    <footer id="pie-pagina">
         <p>Contacto: </p>
         <p>Redes Sociales:
-            <a href="#">Facebook</a>,
-            <a href="#">Twitter</a>,
-            <a href="#">Instagram</a>
+            <a class="footer-link" href="#">Facebook</a>,
+            <a class="footer-link" href="#">Twitter</a>,
+            <a class="footer-link" href="#">Instagram</a>
         </p>
     </footer>
 
